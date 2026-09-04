@@ -1,19 +1,19 @@
 {
-    "version": "0.21.1",
+    "version": "0.22.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/danieljustus/symaira-vault/releases/download/v0.21.1/symaira-vault_0.21.1_windows_amd64.zip",
+            "url": "https://github.com/danieljustus/symaira-vault/releases/download/v0.22.0/symaira-vault_0.22.0_windows_amd64.zip",
             "bin": [
-                "symaira-vault_0.21.1_windows_amd64/symvault.exe"
+                "symaira-vault_0.22.0_windows_amd64/symvault.exe"
             ],
-            "hash": "f213c96d2c16caa0d540cb05d2d9ab2c12d05238b6c8e6626d97a5e44a01b269"
+            "hash": "c3f31a367dd5e3985366440949463211dfedb6cb66f819bc74d32fa7be60846f"
         },
         "arm64": {
-            "url": "https://github.com/danieljustus/symaira-vault/releases/download/v0.21.1/symaira-vault_0.21.1_windows_arm64.zip",
+            "url": "https://github.com/danieljustus/symaira-vault/releases/download/v0.22.0/symaira-vault_0.22.0_windows_arm64.zip",
             "bin": [
-                "symaira-vault_0.21.1_windows_arm64/symvault.exe"
+                "symaira-vault_0.22.0_windows_arm64/symvault.exe"
             ],
-            "hash": "d4b049b6e15796b2b32ccb838e2aefde887d8bbd594e1c0f376e9f5ea6b4f847"
+            "hash": "01f535b8debd1a9bc5176a0f43b0f421f72d1f6a34d25c4f3d8664fb3cdc2303"
         }
     },
     "homepage": "https://github.com/danieljustus/symaira-vault",
