@@ -9,6 +9,7 @@ Continue the code and integration work from the published repository, without ne
 - Base code commit before this document/checkpoint: `98db8d77e149d787ed348435f9de1a0efa5ffe91`.
 - Working directory for every command below: the checked-out repository root.
 - Publication does not authorize a merge, release, tag, destructive cleanup or paid service.
+- Continuation draft PR: #2. Keep it draft until its code/acceptance gates are independently satisfied.
 
 Preserve tracked distribution manifests. Earlier archive/checksum inspection is not repeated by a JSON syntax check. Release immutability and real Windows/Scoop installation remain separate decisions.
 
@@ -70,7 +71,13 @@ Prepublication secret-pattern/outgoing-history scans succeeded for the selected 
 
 No new source code was changed on this branch; the fresh remote-clone command results will be recorded below.
 
-Fresh remote-clone verification: pending publication and replay. Target cloud runtime, permissions, secrets and network gates: **not checked**.
+Fresh remote-clone verification was executed locally on macOS at published checkpoint `21933ab0a3547afb26f71cb1fb1dea45c8cf4f56`. The repository was cloned directly from GitHub, without copied worktree files, stashes or source/configuration overrides. The following scoped command chain exited **0**:
+
+```sh
+python3 -c "import json,subprocess; fs=subprocess.check_output(['git','ls-files','--','*.json'],text=True).splitlines(); assert fs; [json.load(open(p)) for p in fs]; print('JSON manifests checked:',len(fs))"
+```
+
+Rust compilation used two jobs, disabled dev/test debug info and a distinct build-output directory for each variant. Those output directories contained no required source or fixture inputs. Package manager dependency caches were allowed; application state and credentials were not supplied. This verifies repository-contained inputs and these scoped checks, not every product test or native acceptance criterion. Final documentation changes do not change the tested source; the published final HEAD must still be verified before continuation. Target cloud runtime, permissions, secrets and network gates: **not checked**.
 
 ## Copyable continuation request
 
