@@ -1,5 +1,7 @@
 # Symaira Scoop Bucket
 
+![Symaira Scoop Bucket](docs/assets/social-preview.png)
+
 Scoop bucket for Symaira tools.
 
 ## Usage
